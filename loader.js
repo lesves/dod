@@ -139,8 +139,7 @@ function start_app() {
 }
 
 function load_app() {
-
-    document.getElementById("timeout").style.display = "hidden"
+    document.getElementById("timeout").style.display = "none"
     document.getElementById("intro").style.display = "block"
     include('bundle.js', function() {
         loadStep += 1
