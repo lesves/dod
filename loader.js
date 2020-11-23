@@ -177,8 +177,8 @@ function load_app() {
 function time_display(time_dif) {
     counter = ""
     hours = Math.floor(time_dif/3600)
-    minutes = Math.ceil(time_dif/60%60)
-    seconds = Math.ceil(time_dif%60)
+    minutes = Math.floor(time_dif/60%60)
+    seconds = Math.floor(time_dif%60)
     if (hours > 0) {
         if(hours == 1) {
             counter += String(hours)+" hodinu"
@@ -187,16 +187,20 @@ function time_display(time_dif) {
         } else {
             counter += String(hours)+" hodin"
         }
+        counter += ", "
     }
-    counter += " a "
-    if(minutes == 1) {
-        counter += String(minutes)+" minutu"
-    } else if(minutes < 5) {
-        counter += String(minutes)+" minuty"
-    } else {
-        counter += String(minutes)+" minut"
+
+    if (minutes > 0) {
+        if(minutes == 1) {
+            counter += String(minutes)+" minutu"
+        } else if(minutes < 5) {
+            counter += String(minutes)+" minuty"
+        } else {
+            counter += String(minutes)+" minut"
+        }
+        counter += " a "
     }
-    counter += " a "
+
     if(seconds == 1) {
         counter += String(seconds)+" vteřinu"
     } else if(seconds < 5) {
