@@ -22,7 +22,7 @@
 			"right": "-46%",
 			"map": "assets/map/1.png",
 			"markers": [
-				{"top": "15.5%", "left": "52%", "type": "comms", "to": "comms"},
+				{"top": "17%", "left": "53%", "type": "comms", "to": "comms"},
 				{"top": "15%", "left": "36%", "type": "door", "to": "jidelna"},
 				{"top": "8%", "left": "18.5%", "type": "door", "to": "A1"},
 				{"top": "8%", "left": "26.5%", "type": "door", "to": "A2"},
@@ -67,7 +67,7 @@
 			"markers": [
 				{"top": "16%", "left": "42.5%", "type": "pin", "to": "kurzygo"},
 				{"top": "7%", "left": "28%", "type": "pin", "to": "dofe"},
-				{"top": "15.5%", "left": "52%", "type": "comms", "to": "comms"},
+				{"top": "17%", "left": "53%", "type": "comms", "to": "comms"},
 				{"top": "7%", "left": "48.5%", "type": "door", "to": "\u0159editelna"},
 				{"top": "7%", "left": "53.5%", "type": "door", "to": "z\u00e1stupci"},
 				{"top": "7%", "left": "84.5%", "type": "door", "to": "USV"},
@@ -111,7 +111,7 @@
 			"right": "-48%",
 			"map": "assets/map/3.png",
 			"markers": [
-				{"top": "15.5%", "left": "52%", "type": "comms", "to": "comms"},
+				{"top": "17%", "left": "53%", "type": "comms", "to": "comms"},
 				{"top": "14%", "left": "81.5%", "type": "door", "to": "Posluch\u00e1rna chemie"},
 				{"top": "10%", "left": "29%", "type": "door", "to": "Terasa (v\u010del\u00edn)"},
 				{"top": "11%", "left": "84.5%", "type": "door", "to": "V\u00e1hovna"},
@@ -135,9 +135,9 @@
 			{"lat": -10, "lon": -115, "hall": "05", "tooltip": "Jít o patro níže"},
 			{"lat": -1.5, "lon": -86, "room": "PoM"},
 			{"lat": -1.5, "lon": -90, "room": "PoV"},
-			{"lat": -1.5, "lon": -95, "room": "H3.1"},
+			{"lat": -1.5, "lon": 140.5, "room": "H3.1"},
 			{"lat": -1.5, "lon": 145, "room": "H3.2"},
-			{"lat": -1.5, "lon": 140.5, "room": "H3.3"}
+			{"lat": -1.5, "lon": -95, "room": "H3.3"}
 		],
 		"minimap": {
 			"angle": 135,
