@@ -176,9 +176,20 @@ function load_app() {
 
 function time_display(time_dif) {
     counter = ""
-    hours = Math.floor(time_dif/3600)
+    days = Math.floor(time_dif/3600/24)
+    hours = Math.floor(time_dif/3600%24)
     minutes = Math.floor(time_dif/60%60)
     seconds = Math.floor(time_dif%60)
+    if (days > 0) {
+        if(days == 1) {
+            counter += String(days)+" den"
+        } else if(days < 5) {
+            counter += String(days)+" dny"
+        } else {
+            counter += String(days)+" dnů"
+        }
+        counter += ", "
+    }
     if (hours > 0) {
         if(hours == 1) {
             counter += String(hours)+" hodinu"
